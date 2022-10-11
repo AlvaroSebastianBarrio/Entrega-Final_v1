@@ -1,0 +1,651 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+}
+html{
+  height: 100vh;
+}
+
+.bg-colornav {
+  background-color: rgb(18, 18, 136);
+  height: 16%;
+  font-style: italic;
+}
+
+.nav-link {
+  color: aliceblue !important;
+}
+
+.navbar-toggler-icon {
+  background-color: aliceblue;
+  border-radius: 20%;
+}
+
+/* .bg-colornavgrad {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(14, 14, 101) 35%, rgb(0, 212, 255) 100%);
+} */
+
+#main-header {
+  position: absolute;
+  height: 26%;
+  width: 100%;
+  /* background-color: green; */
+  left: 0;
+  top: 0;
+}
+
+.navegacion {
+  position: absolute;
+  z-index: 1000;
+}
+
+#logo {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+#logo img {
+  height: 60px;
+}
+
+#encabezado {
+  font-family: sans-serif;
+  margin-left: 20px;
+  color: black;
+}
+
+footer.PiePagina {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  background-color: rgb(18, 18, 136);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/fondobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  padding: 1vw;
+  transition: all 0.3s ease 0s;
+}
+
+li:hover {
+  transform: scale(99%);
+}
+
+li > a:hover {
+  color: red !important;
+  background-color: black !important;
+}
+
+#navbarSupportedContent {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-menu.show {
+  background-color: black;
+}
+
+/*----------Pagina index------------------*/
+
+.carrousel1 {
+  z-index: -1;
+}
+
+.carousel-inner > .carousel-item active > img {
+  object-fit: scale-down;
+  height: 35vh;
+  width: 100%;
+}
+
+.carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  height: 35vh;
+  width: 100%;
+}
+
+.carrusel1 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carrusel2 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carrusel3 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*----------------------------------------*/
+.servicios {
+  position: relative;
+}
+
+.submenu_Servicios {
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+
+.submenu_Servicios > li {
+  width: 190px;
+  transform: translateX(-20px);
+  border-bottom: solid 1px white;
+  text-align: center;
+  background-color: #24252a;
+}
+
+.submenu_Servicios > li:hover {
+  background-color: rgb(165, 27, 27);
+}
+
+.servicios:hover > .submenu_Servicios {
+  display: block;
+}
+
+/*----------------------------------------*/
+.productos {
+  position: relative;
+}
+
+.submenu_Productos {
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+
+.submenu_Productos > li {
+  width: 190px;
+  transform: translateX(-20px);
+  border-bottom: solid 1px white;
+  text-align: center;
+  background-color: #24252a;
+}
+
+.submenu_Productos > li:hover {
+  background-color: rgb(165, 27, 27);
+}
+
+.productos:hover > .submenu_Productos {
+  display: block;
+}
+
+/*-----------------------------*/
+/*-------Pagina Productos------*/
+.productos1moviletop{
+  /* display: flex; */
+  display: none;
+}
+
+
+.productos_ofrecidos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.productos_ofrecidos > img {
+  display: flex;
+  padding: 1%;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+.contenedor_pag_productos {
+  width: 100vw;
+  height: 0vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo div h4 {
+  color: yellow;
+  border: white 1px solid;
+  position: absolute;
+  right: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-----------------------------*/
+/*-------Pagina Productos2------*/
+.img_prod2 {
+  width: 150px;
+  height: 150px;
+}
+
+.divProductos2 {
+  width: 80vw;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divProductos2 > h1 {
+  color: yellow;
+}
+
+/*--------Contacto---------*/
+.pagina_contacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.mapa {
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+form{
+  width: 300px;
+  margin: auto;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+h2 {
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+input,textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding:7px;
+  box-sizing: border-box;
+}
+#boton{
+  background-color: rgb(18, 18, 136);
+}
+
+/*-----------------------------*/
+/*-------Pagina Servicios------*/
+.ContainerPadreServicios1 {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  margin-top: 0%;
+  /* background-color: white; */
+  grid-template-columns: repeat(3, 0.27fr);
+  grid-template-rows: auto auto;
+  gap: 2px;
+  padding: 2px;
+  z-index: -1;
+}
+
+.uno {
+  /* grid-area: */
+  /* display:flex; */
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* object-fit: cover; */
+  background-color: red;
+  border: 4px solid black;
+}
+
+.titulo1 {
+  position: absolute;
+  top: 0;
+  padding: 1px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dos {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* object-fit: cover; */
+  background-color: yellowgreen;
+  border: 4px solid black;
+}
+
+.titulo2 {
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tres {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+  border: 4px solid black;
+}
+
+.titulo3 {
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cuatro {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  border: 4px solid black;
+}
+
+.titulo4 {
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cinco {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  border: 4px solid black;
+}
+
+.titulo5 {
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.seis {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border: 4px solid black;
+}
+
+.titulo6 {
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*-----------------------------*/
+/*-------Pagina Nuestro Taller------*/
+.ContainerPadreTaller {
+  display: grid;
+  margin-top: 3%;
+  background-color: black;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: auto auto;
+  grid-auto-rows: 20%;
+  gap: 2px;
+  padding: 2px;
+}
+
+.itemuno {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: span 2;
+}
+
+.TextoNuestroTaller {
+  position: absolute;
+  padding: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.TextoNuestroTaller2 {
+  position: absolute;
+  top: 6%;
+  padding: 4px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.itemdos {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+.itemtres {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+.itemcuatro {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+.itemcinco {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+/*--------------- Pagina de Servicios 2----------------- */
+.servicios2moviletop{
+  display: none;
+}
+.servicios2movile{
+  display: none;
+}
+
+.container{
+  background-color:  rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  
+
+}
+.card{
+  margin: 10px;
+  min-height: 30vh;
+  border: 3px solid black;
+  display:flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+
+}
+.card-body{
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.btn btn-primary{
+  display: block;
+  /* margin-top: auto; */
+}
+.card-img-top{
+  display:block;
+}
+
+.card-title {
+  color: crimson;
+}
+
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%);
+}
+
+/* ----------------------------------------------------- */
+/* ---------------  Media Queries -----------------------*/
+@media only screen and (max-width: 576px) {
+  
+  
+  /*Galeria Grid Servicios1*/
+  .ContainerPadreServicios1 {
+    margin-top: 300%;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: auto auto auto auto auto auto; */
+    
+  }
+  
+  .servicios2moviletop{
+    margin-top: 20vh;
+    display: flex;
+    width: 100%;
+    height: 20vh;
+  }
+  .servicios2movile{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    
+  }
+  .container{
+    display: flex;
+    overflow: scroll;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;   */
+    /* align-items:center;*/
+    /*justify-content: center;*/
+   }
+
+
+    
+    
+ 
+  /* Productos1 */
+  .productos1moviletop{
+    margin-top: 95vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 20vh; */
+  }
+  .productos1movilebottton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 50vh; */
+    margin: 10px; 
+    /* margin-top: 95vh */
+  }
+  
+
+  .productos_ofrecidos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .body {
+    background-repeat: repeat;
+  }
+  /*-----Nuestro Taller---*/
+  .ContainerPadreTaller {
+    margin-top: 400%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*-----Productos2------*/
+  .divProductos2 {
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+
+}
